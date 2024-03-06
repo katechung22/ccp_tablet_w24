@@ -323,6 +323,11 @@ img {
     a.active {
         color: #FFFFED;
     }
+
+    .button:hover {
+        border: 4px solid #8ba888;
+        background-color: #5C4033;
+    }
   }
 
 @media screen and (min-width: 750px) {
@@ -440,10 +445,5 @@ img {
         padding: 0 50px;
         margin-bottom: 20px;
         margin-left: 10px;
-    }
-    
-    .button:hover {
-        border: 4px solid #8ba888;
-        background-color: #5C4033;
     }
   }
