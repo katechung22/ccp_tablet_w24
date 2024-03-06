@@ -284,13 +284,44 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-    p {
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    ol {
+        color: white;
+    }
+
+    li {
+        color: white;
+    }
+    
+    body {
         background-color: #060529;
+    }
+
+    p {
         color: white;
     }
 
     a {
         color: #ADD8E6;
+    }
+
+    .button {
+        background-color: #013220;
+    }
+
+    a.active {
+        color: #FFFFED;
     }
   }
 
