@@ -143,6 +143,10 @@ a.active {
     color: #AA336A;
 }
 
+a.visited {
+    color: #FF69B4;
+}
+
 img {
     margin: 10px;
 }
@@ -154,7 +158,7 @@ img {
 
 .pet-div {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr; 
     grid-gap: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -171,19 +175,19 @@ img {
 }
 
 .first-grid {
-    grid-column: 1/1;
+    grid-column: 1/-1;
 }
 
 .second-grid {
-    grid-column: 2/2;
+    grid-column: 1/-1;
 }
 
 .third-grid {
-    grid-column: 1/1;
+    grid-column: 1/-1;
 }
 
 .fourth-grid {
-    grid-column: 2/2;
+    grid-column: 1/-1;
 }
 
 .first-pet-pic {
@@ -196,20 +200,21 @@ img {
 
 .nested-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr; 
     align-items: center;
+    align-content: center;
     grid-gap: 2px;
 }
 
 .gallery-photo {
-    width: 110px;
-    height: 130px;
+    width: 150px;
+    height: 170px;
     margin: 0px;
 }
 
 .food-div {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr; 
     grid-gap: 10px;
     align-items: center;
     margin-left: 30px;
@@ -218,8 +223,8 @@ img {
 }
 
 .food-photo {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 110px;
     margin: 0px;
 }
 
@@ -242,9 +247,46 @@ img {
 }
 
 .travel-photo {
-    width: 100px;
-    height: 110px;
+    width: 150px;
+    height: 120px;
     margin: 0px;
+}
+
+.button {
+    background-color: #fbeee0;
+    border: 2px solid #8ba888;
+    border-radius: 30px;
+    box-shadow: #8ba888 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 2px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.button:hover {
+    border: 2px solid #8ba888;
+    background-color: #FFB6C1;
+}
+
+.button:active {
+box-shadow: #422800 2px 2px 0 0;
+transform: translate(2px, 2px);
+}
+
+.dark-mode {
+    background-color: #060529;
+    color: white;
+    border: white;
 }
 
 @media screen and (min-width: 750px) {
@@ -307,37 +349,94 @@ img {
     }
 
     .pet-div {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr; 
+        grid-gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 80px;
+        align-items: center;
         align-content: center;
     }
-   
-    .button {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 35px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+
+    .dark-mode {
+        background-color: #060529;
+        color: white;
+        border: white;
     }
 
+    .button-spacing {
+        margin: 30px;
+        font-size: 15px;
+        display: block;
+        text-align: right;
+        padding: 8px;
+    }
+
+    .skip:focus {
+        color: #70b8dc;
+        border: 2px solid #70b8dc;
+    }
+
+    a.link {
+        color: #FF2400;
+    }
+
+    .first-grid {
+        grid-column: 1/1;
+    }
+    
+    .second-grid {
+        grid-column: 2/2;
+    }
+    
+    .third-grid {
+        grid-column: 1/1;
+    }
+    
+    .fourth-grid {
+        grid-column: 2/2;
+    }
+
+    .nested-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        align-items: center;
+        grid-gap: 2px;
+    }
+
+    .food-div {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        grid-gap: 10px;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 80px;
+    }
+    .button {
+        background-color: #fbeee0;
+        border: 2px solid #8ba888;
+        border-radius: 30px;
+        box-shadow: #8ba888 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 0 50px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
     .button:hover {
-        border: 4px solid #301934;
+        border: 4px solid #8ba888;
         background-color: #FFB6C1;
     }
-
-    .button-74:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-    }
-
-
   }

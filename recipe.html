@@ -18,6 +18,13 @@
                 <li class = "travel button"><a href = "travel.html">Travel</a></li>
             </ul>
         </nav>
+        <button onclick="dark()" class = "button button-spacing"> Toggle dark mode </button>
+                    <script>
+                        function dark(){
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                        }
+                    </script>
         <h1>Recipes</h1>
     </header>
     <main id="main">
@@ -25,7 +32,7 @@
             <div class = "first-grid">
                 <h2>Zucchini Fritters</h2>
                 <p>Origin: Unknown</p>
-                <p>Source: <a href = "https://niftyrecipe.com/recipe-851-zucchini-fritters.html">Nifty Recipe</a></p>
+                <p>Source: <a href = "https://niftyrecipe.com/recipe-851-zucchini-fritters.html" class = "link">Nifty Recipe</a></p>
                 <p>Category: Side dish/main dish</p>
             </div>
             
@@ -65,7 +72,7 @@
             <div class = "first-grid">
                 <h2>Swedish Pancakes</h2>
                 <p>Origin: Sweden</p>
-                <p>Source: <a href = "https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/">True North Kitchen</a></p>
+                <p>Source: <a href = "https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/" class = "link">True North Kitchen</a></p>
                 <p>Category: Breakfast</p>
             </div>
 
@@ -101,7 +108,7 @@
             <div class = "first-grid">
                 <h2>Homemade Mac & Cheese</h2>
                 <p>Origin: Northern Europe</p>
-                <p>Source: <a href = "https://www.delish.com/cooking/recipe-ideas/a44763401/mac-and-cheese-recipe/">Delish</a></p>
+                <p>Source: <a href = "https://www.delish.com/cooking/recipe-ideas/a44763401/mac-and-cheese-recipe/" class = "link">Delish</a></p>
                 <p>Category: Main Dish</p>
             </div>
         
